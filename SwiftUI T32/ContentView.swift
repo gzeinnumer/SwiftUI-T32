@@ -9,8 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Link(destination: URL(string: "https://designcode.io")!){
+            Image(systemName: "link")
+                .frame(width: 32 , height: 32)
+                .background(.blue)
+                .mask(Circle())
+                .foregroundColor(.white)
+            
+        }
     }
 }
 
